@@ -61,6 +61,10 @@ header {
     position: fixed;
 }
 
+.list-count {
+    color: white;
+}
+
 .active {
     color: #ffffff91;
 }
