@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <link rel="icon" href="../static/images/favcon.png" th:href="@{/images/favcon.png}" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css" th:href="@{/styles.css}" />
+    <link rel="stylesheet" href="list.css" />
+    <script src="https://kit.fontawesome.com/31648eb95d.js" crossorigin="anonymous"></script>
+    <title th:text="${title}">빡JY's 플렉스</title>
+</head>
+
+  <body>
+        <header class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" th:fragment="menu(menu)" >
+			<nav>
+				<div class="inner-nav">
+					<ul class="come">
+						<li>
+							<a href="/"><img src="/images/favcon.png" alt="" /></a>
+						</li>
+					</ul>
+					<ul class="bye">
+						<li>
+							<a href="/"><img src="/images/main-logo.png" alt="" /></a>
+						</li>
+						<li><a href="#tv-show">TV프로그램</a></li>
+						<li><a href="/master" class="" th:classappend="${menu} == 'home'? 'active'">영화</a></li>
+						<li><a href="/board/list" class="" th:classappend="${menu} == 'board'? 'active'">내가 원하는 영화 요청</a></li>
+					</ul>
+					<ul>
+						<li class="bye"><a href="">검색</a></li>
+						<li class="bye"><a href="">알림</a></li>
+						<li id="profile-selecte"><img src="images/david.png" alt="" /></li>
+					</ul>
+				</div>
+				<ul class="bottom-nav come">
+					<li><a href="/">TV프로그램</a></li>
+					<li><a href="/master" class="" th:classappend="${menu} == 'home'? 'active'">영화</a></li>
+					<li><a href="/board/list" class="" th:classappend="${menu} == 'board'? 'active'">내가 원하는 영화 요청</a></li>
+				</ul>
+			</nav>
+			<div class="menu-wrap">
+				<div class="menu">
+					<div>
+						<div>
+							<div class="pro-logo"><img src="https://fontmeme.com/permalink/201109/e52951d466a0db107caf4e426bd6430b.png" alt="" /></div>
+							<h2>Poshflix를 시청할 프로필을 선택하세요.</h2>
+							<ul>
+								<li class="profile">
+									<div>
+										<a href="master.html">
+											<div>
+												<div class="profile-icon" style="background-image: url(images/pjy-face.JPG)"></div>
+											</div>
+											<span class="profile-name">빡's flex</span>
+										</a>
+									</div>
+								</li>
+								<li class="profile">
+									<div>
+										<a href="master.html">
+											<div>
+												<div class="profile-icon" style="background-image: url(https://occ-0-988-993.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABXhp5HP4mhkdVeQArMrlAQzXKC2Msh_QSY1MEgD1JkcGpPsVWktTQPACg__X19xET77cgRGRVYpDYbNxcr5YjWGmui83.png?r=a38)"></div>
+											</div>
+											<span class="profile-name">나샤</span>
+										</a>
+									</div>
+								</li>
+								<li class="profile">
+									<div>
+										<a href="master.html">
+											<div>
+												<div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+											</div>
+											<span class="profile-name">마리아</span>
+										</a>
+									</div>
+								</li>
+								<li class="profile">
+									<div>
+										<a href="master.html">
+											<div>
+												<div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+											</div>
+											<span class="profile-name">에클</span>
+										</a>
+									</div>
+								</li>
+								<li class="profile">
+									<div>
+										<a href="master.html">
+											<div>
+												<div class="profile-icon" style="background-image: url(images/netflix-face.jpg)"></div>
+											</div>
+											<span class="profile-name">라라</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+        </header>
+  
+  </body>
+  
+</html>
