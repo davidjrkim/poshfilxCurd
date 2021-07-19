@@ -91,8 +91,6 @@ h3 {
     color: #fff;
     font-size: x-large;
     margin-top: -70px;
-    padding: 30px;
-    padding-left: 80px;
 }
 
 nav .inner-nav {
@@ -378,8 +376,8 @@ main {
 }
 
 main {
-    padding-top: 150px;
-    max-width: 80%;
+    padding-top: 180px;
+    /* max-width: 80%; */
     background-color: #141414;
 }
 
